@@ -1,8 +1,21 @@
-import { express } from "express";
+import express from "express";
+import path from "path";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+import bodyParser from "body-parser";
+const app = express();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
-app = express();
+import userRoute from "./src/routes/auth.js";
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get("/login", (req, res, next) => {
-  res.sendFile();
+app.use(userRoute);
+app.get("/", (req, res, next) => {
+  res.sendFile(path.join(__dirname, "src", "views", "landingPage.html"));
+});
+app.use((req, res, next) => {
+  res.status(404).send("Address not found");
 });
 app.listen(3000);
