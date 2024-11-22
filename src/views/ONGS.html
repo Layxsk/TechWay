@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ONGs</title>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../public/img/iconvs.png" type="image/x-icon">
+    <link rel="stylesheet" href="../public/css/ONGS.css" />
+    <link rel="stylesheet" href="../public/css/output.css" />
+  </head>
+
+  <body class="max-w-7xlmx-auto">
+    <!-- Navbar -->
+    <nav class="bg-white p-5">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center space-x-5 px-5">
+          <img src="../public/img/logo.png" alt="Logo" class="w-28" />
+        </div>
+        <!-- Links de Navegação (Centralizados) -->
+        <div class="flex-1 flex text-center space-x-6">
+          <!-- Botão "Página Inicial" -->
+          <button
+            class="text-gray-800 hover:text-orange-500 bg-transparent focus:outline-none"
+          >
+            Página Inicial
+          </button>
+          <!-- Botão "ONGs" -->
+          <button
+            class="text-gray-800 hover:text-orange-500 bg-transparent focus:outline-none"
+          >
+            ONGs
+          </button>
+          <!-- Botão "Sobre" -->
+          <button
+            class="text-gray-800 hover:text-orange-500 bg-transparent focus:outline-none"
+          >
+            Sobre
+          </button>
+          <!-- Botão "Campanha Memória" -->
+          <button
+            class="text-gray-800 border border-orange-500 px-10 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-orange-500 hover:border-gray-800 hover:text-orange-500"
+          >
+            Campanha Memória
+          </button>
+        </div>
+        <!-- Barra de Pesquisa -->
+        <div class="relative">
+          <input
+            type="text"
+            placeholder="Procurar memorial"
+            class="py-2 px-4 pl-10 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 w-64"
+          />
+          <svg
+            class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.742a6.5 6.5 0 1 0-1.417 1.417l3.486 3.485a1 1 0 1 0 1.415-1.414l-3.484-3.485zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+            />
+          </svg>
+          <!--botao de login-->
+          <button
+            class="text-gray-800 border border-orange-500 px-3 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-orange-500 hover:border-gray-800 hover:text-orange-500 ml-4"
+          >
+            <img
+              src="../public/img/perfil.png"
+              class="size-4.5 inline items-center"
+            />
+            Login
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!--Inicio do Login-->
+    <div class="bg-gray-100 min-h-screen p-6 mb-6">
+      <h1 class="text-4xl font-bold text-center text-blue-900 mb-8">
+        ONGs de Apoio às Vítimas de Acidentes de Trânsito
+        <br>
+        E Instituições do Governo
+      </h1>
+      <hr class="border-orange-500 border-t-2 mb-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- card 1 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <img src="../public/img/OBSERVATORIO.PNG" alt="" />
+          <h2 class="text-xl font-semibold text-gray-800 my-8">
+            Observatório Nacional de Segurança Viária
+          </h2>
+          <p class="text-gray-600 text-sm my-8">
+            Promove campanhas e programas educativos para a redução de
+            acidentes, como o Maio Amarelo.
+          </p>
+          <a
+            href="https://www.onsv.org.br"
+            class="text-blue-800 border border-orange-500 px-10 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-orange-500 hover:border-blue-800 hover:text-orange-500"
+          >
+            Visite o site
+          </a>
+        </div>
+
+        <!-- card 2 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-xl font-semibold text-gray-800 my-8">
+            <img src="../public/img/IPTRAN.PNG" alt="" />
+            Instituto Paz no Trânsito (IPTRAN)
+          </h2>
+          <p class="text-gray-600 text-sm my-8">
+            Oferece suporte a famílias de vítimas de trânsito e realiza projetos
+            educativos para a conscientização.
+          </p>
+          <a
+            href="https://www.iptran.org.br"
+            class="text-blue-800 border border-orange-500 px-10 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-orange-500 hover:border-blue-800 hover:text-orange-500"
+          >
+            Visite o site
+          </a>
+        </div>
+
+        <!-- card 3 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <img src="../public/img/ATRADOS.PNG" alt="" class="w-1x1" />
+          <h2 class="text-xl font-semibold text-gray-800 my-8">
+            Aliança Global de ONGs para Segurança no Trânsito
+          </h2>
+          <p class="text-gray-600 text-sm my-8">
+            Atua globalmente em parceria com a ONU para reduzir acidentes e
+            melhorar a segurança no trânsito.
+          </p>
+          <a
+            href="https://www.onsv.org.br"
+            class="text-blue-800 border border-orange-500 px-10 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-orange-500 hover:border-blue-800 hover:text-orange-500"
+          >
+            Saiba mais
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="border-orange-500 border-t-2">
+    <div class="flex flex-col p-8 lg:px-32 lg:py-11">
+      <div class="bg-gray-100 p-5 mb-10">
+          <h1 class="font-bold text-3xl mb-2 text-blue-900">Por que ajudar?</h1>
+          <p class="my-3 text-lg">
+            Apoiar ONGs dedicadas às vítimas de trânsito e à promoção de um trânsito seguro é 
+            investir em vidas.
+            <br>Essas organizações oferecem suporte emocional, jurídico e psicológico às 
+            famílias afetadas, além de trabalharem ativamente na conscientização e prevenção de acidentes. 
+            <br> Cada <strong>contribuição</strong> ajuda a construir um futuro com menos tragédias e mais segurança nas ruas. 
+            <br><strong>Juntos</strong>, podemos transformar o trânsito em um espaço de respeito e proteção para todos.
+          </p>
+      </div>
+    
+
+  <footer class="bg-white dark:bg-gray-50">
+    <div class="mx-auto w-full max-w-screen-xl lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="landingPage.html" class="items-center">
+              <img
+                src="../public/img/logopt2_techway.png"
+                class="h-8 me-3"
+                alt="TechWay Logo"
+              />
+              <span
+                class="self-center text-2xl font-semibold whitespace-nowrap text-blue"
+                >Via da Saudade</span
+              >
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-blue-900"
+              >
+                Informações
+              </h2>
+              <ul class="text-gray-500 dark:text-orange-700 font-medium">
+                <li class="mb-4">
+                  <a href="Login.html" class="hover:underline">Login</a>
+                </li>
+                <li>
+                  <a href="Cadastro.html" class="hover:underline">Cadastro</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-blue-900"
+              >
+                Saiba Mais
+              </h2>
+              <ul class="text-gray-500 dark:text-orange-700 font-medium">
+                <li class="mb-4">
+                  <a href="MemorialPost.html" class="hover:underline"
+                    >Memoriais</a
+                  >
+                </li>
+                <li>
+                  <a href="QuemSomos.html" class="hover:underline">Quem somos</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-blue-900"
+              >
+                Outro
+              </h2>
+              <ul class="text-gray-500 dark:text-orange-700 font-medium">
+                <li class="mb-4">
+                  <a href="ONGS.html" class="hover:underline">ONGs</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">Campanhas</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-blue-900 border-t-2 sm:mx-auto dark:border-blue-900" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+            >© 2024
+            <a href="landingPage.html" class="hover:underline">TechWay™</a>. All
+            Rights Reserved.
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
