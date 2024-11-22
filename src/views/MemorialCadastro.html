@@ -16,45 +16,45 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="../public/img/iconvs.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../public/img/iconvs.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="../public/css/memorialcadastro.css" />
     <link rel="stylesheet" href="../public/css/output.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="bg-white p-5 mb-8">
+    <nav class="bg-white p-5">
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <div class="flex items-center space-x-5 px-5">
-          <img
-            src="../public/img/logopt2_techway.png"
-            alt="Logo"
-            class="w-28"
-          />
+          <img src="../public/img/logo.png" alt="Logo" class="w-28" />
         </div>
         <!-- Links de Navegação (Centralizados) -->
         <div class="flex-1 flex text-center space-x-6">
           <!-- Botão "Página Inicial" -->
           <button
-            class="text-gray-800 hover:text-orange-500 bg-transparent focus:outline-none"
+            class="text-blue-900 hover:text-orange-500 bg-transparent focus:outline-none"
           >
             Página Inicial
           </button>
           <!-- Botão "ONGs" -->
           <button
-            class="text-gray-800 hover:text-orange-500 bg-transparent focus:outline-none"
+            class="text-blue-900 hover:text-orange-500 bg-transparent focus:outline-none"
           >
             ONGs
           </button>
           <!-- Botão "Sobre" -->
           <button
-            class="text-gray-800 hover:text-orange-500 bg-transparent focus:outline-none"
+            class="text-blue-900 hover:text-orange-500 bg-transparent focus:outline-none"
           >
             Sobre
           </button>
           <!-- Botão "Campanha Memória" -->
           <button
-            class="text-gray-800 border border-orange-500 px-10 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-orange-500 hover:border-gray-800 hover:text-orange-500"
+            class="text-blue-900 border border-orange-500 px-10 py-2 rounded-full focus:ring-orange-500 hover:text-orange-500"
           >
             Campanha Memória
           </button>
@@ -81,11 +81,12 @@
           </svg>
           <!--botao de login-->
           <button
-            class="text-gray-800 border border-orange-500 px-3 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-orange-500 hover:border-gray-800 hover:text-orange-500 ml-4"
+            url="Login.html"
+            class="text-blue-900 border border-orange-500 px-4 py-2 rounded-full focus:ring-orange-500 hover:text-orange-500 ml-4"
           >
             <img
               src="../public/img/perfil.png"
-              class="size-4.5 inline items-center"
+              class="w-6 inline items-center"
             />
             Login
           </button>
@@ -93,9 +94,7 @@
       </div>
     </nav>
     <div class="w-full flex justify-center items-center mt-8">
-      <h2 class="font-extrabold text-6xl text-blue-900">
-        Conte sua memória
-      </h2>
+      <h2 class="font-extrabold text-6xl text-blue-900">Conte sua memória</h2>
     </div>
     <div class="flex items-center justify-center h-screen">
       <form class="w-full max-w-2xl">
@@ -103,7 +102,8 @@
           <div class="w-full md:w-1/2 px-2">
             <label
               class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-first-name">
+              for="grid-first-name"
+            >
               Primeiro Nome
             </label>
             <input
@@ -116,7 +116,8 @@
           <div class="w-full md:w-1/2 px-2">
             <label
               class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-last-name">
+              for="grid-last-name"
+            >
               Sobrenome
             </label>
             <input
@@ -131,7 +132,8 @@
           <div class="w-full px-2 py-3">
             <label
               class="block text-gray-700 text-xs font-bold mb-2"
-              for="grid-tipo-local">
+              for="grid-tipo-local"
+            >
               LOCAL DO ACIDENTE
             </label>
             <input
@@ -148,32 +150,37 @@
             >
               Data do falecimento
             </label>
-            <input datepicker id="default-datepicker" 
+            <input
+              datepicker
+              id="default-datepicker"
               class="appearance-none block w-full bg-gray-100 border border-orange-500 hover:border-blue-800 hover:text-orange-500 rounded-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              type="text" 
-              placeholder="Selecione a data">
-           </div>
+              type="text"
+              placeholder="Selecione a data"
+            />
           </div>
-          <div class="w-full flex flex-col mt-3">
-            <label
-              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-mensagem"
-            >
-              Contate-nos
-            </label>
-            <textarea
-              id="grid-mensagem"
-              placeholder="Deixe sua mensagem"
-              aria-label="Deixe sua mensagem"
-              role="textbox"
-              class="appearance-none block w-full h-36 bg-gray-100 border border-orange-500 hover:border-blue-800 hover:text-orange-500 rounded-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white placeholder-gray-400 placeholder-font-semibold"
-           ></textarea>
         </div>
-          
+        <div class="w-full flex flex-col mt-3">
+          <label
+            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            for="grid-mensagem"
+          >
+            Contate-nos
+          </label>
+          <textarea
+            id="grid-mensagem"
+            placeholder="Deixe sua mensagem"
+            aria-label="Deixe sua mensagem"
+            role="textbox"
+            class="appearance-none block w-full h-36 bg-gray-100 border border-orange-500 hover:border-blue-800 hover:text-orange-500 rounded-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white placeholder-gray-400 placeholder-font-semibold"
+          ></textarea>
+        </div>
+
         <div class="w-full flex flex-col mx-0">
           <div class="w-full items-center">
             <button
-              class="w-full text-blue-900 font-semibold bg-white border border-orange-500 hover:border-blue-800 hover:text-orange-500 py-2 my-1 mt-4 rounded-md" type="button">
+              class="w-full text-blue-900 font-semibold bg-white border border-orange-500 hover:text-orange-500 py-2 my-1 mt-4 rounded-md"
+              type="button"
+            >
               Postar
             </button>
           </div>
@@ -184,56 +191,79 @@
     <!--Rodapé-->
     <footer class="bg-white dark:bg-gray-50 border mt-12">
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-          <div class="md:flex md:justify-between">
-            <div class="mb-6 md:mb-0">
-                <a href="landingPage.html" class="items-center">
-                    <img src="../public/img/logopt2_techway.png" class="h-8 me-3" alt="TechWay Logo" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-blue">Via da Saudade</span>
-                </a>
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="landingPage.html" class="items-center">
+              <img
+                src="../public/img/logopt2_techway.png"
+                class="h-8 me-3"
+                alt="TechWay Logo"
+              />
+              <span
+                class="self-center text-2xl font-semibold whitespace-nowrap text-blue"
+                >Via da Saudade</span
+              >
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-blue-900"
+              >
+                Informações
+              </h2>
+              <ul class="text-gray-500 dark:text-orange-700 font-medium">
+                <li class="mb-4">
+                  <a href="Login.html" class="hover:underline">Login</a>
+                </li>
+                <li>
+                  <a href="Cadastro.html" class="hover:underline">Cadastro</a>
+                </li>
+              </ul>
             </div>
-            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-blue-900"> Informações</h2>
-                    <ul class="text-gray-500 dark:text-orange-700 font-medium">
-                        <li class="mb-4">
-                            <a href="Login.html" class="hover:underline">Login</a>
-                        </li>
-                        <li>
-                            <a href="Cadastro.html" class="hover:underline">Cadastro</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-blue-900">Saiba Mais</h2>
-                    <ul class="text-gray-500 dark:text-orange-700 font-medium">
-                        <li class="mb-4">
-                            <a href="MemorialPost.html" class="hover:underline">Memoriais</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:underline">Quem somos</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-blue-900">Outro</h2>
-                    <ul class="text-gray-500 dark:text-orange-700 font-medium">
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline">ONGs</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:underline">Campanhas</a>
-                        </li>
-                    </ul>
-                </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-blue-900"
+              >
+                Saiba Mais
+              </h2>
+              <ul class="text-gray-500 dark:text-orange-700 font-medium">
+                <li class="mb-4">
+                  <a href="MemorialPost.html" class="hover:underline"
+                    >Memoriais</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">Quem somos</a>
+                </li>
+              </ul>
             </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-blue-900"
+              >
+                Outro
+              </h2>
+              <ul class="text-gray-500 dark:text-orange-700 font-medium">
+                <li class="mb-4">
+                  <a href="ONGS.html" class="hover:underline">ONGs</a>
+                </li>
+                <li>
+                  <a href="Campanhas.html" class="hover:underline">Campanhas</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <hr class="my-6 border-blue-900 sm:mx-auto dark:border-blue-900" />
         <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 
-              <a href="landingPage.html" class="hover:underline">TechWay™</a>. All Rights Reserved.
-            </span>
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+            >© 2024
+            <a href="landingPage.html" class="hover:underline">TechWay™</a>. All
+            Rights Reserved.
+          </span>
         </div>
       </div>
-    </footer>    
+    </footer>
   </body>
 </html>
