@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 import userRoute from "./src/routes/auth.js";
-import viewRoute from "./src/routes/auth.js";
+import viewRoute from "./src/routes/views.js";
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "src", "public")));
