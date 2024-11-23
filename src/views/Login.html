@@ -16,13 +16,9 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
-    <link
-      rel="shortcut icon"
-      href="../public/img/iconvs.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="../public/css/login.css" />
-    <link rel="stylesheet" href="../public/css/output.css" />
+    <link rel="shortcut icon" href="/img/iconvs.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="/css/output.css" />
   </head>
 
   <body class="max-w-7xlmx-auto">
@@ -31,30 +27,34 @@
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <div class="flex items-center space-x-5 px-5">
-          <img src="../public/img/logo.png" alt="Logo" class="w-28" />
+          <img src="/img/logo.png" alt="Logo" class="w-28" />
         </div>
         <!-- Links de Navegação (Centralizados) -->
         <div class="flex-1 flex text-center space-x-6">
           <!-- Botão "Página Inicial" -->
           <button
+            id="btn-landingPage"
             class="text-blue-900 hover:text-orange-500 bg-transparent focus:outline-none"
           >
             Página Inicial
           </button>
           <!-- Botão "ONGs" -->
           <button
+            id="btn-ong"
             class="text-blue-900 hover:text-orange-500 bg-transparent focus:outline-none"
           >
             ONGs
           </button>
           <!-- Botão "Sobre" -->
           <button
+            id="btn-sobre"
             class="text-blue-900 hover:text-orange-500 bg-transparent focus:outline-none"
           >
             Sobre
           </button>
           <!-- Botão "Campanha Memória" -->
           <button
+            id="btn-campanhas"
             class="text-blue-900 border border-orange-500 px-10 py-2 rounded-full focus:ring-orange-500 hover:text-orange-500"
           >
             Campanha Memória
@@ -82,13 +82,10 @@
           </svg>
           <!--botao de login-->
           <button
-            url="Login.html"
+            id="btn-login"
             class="text-blue-900 border border-orange-500 px-4 py-2 rounded-full focus:ring-orange-500 hover:text-orange-500 ml-4"
           >
-            <img
-              src="../public/img/perfil.png"
-              class="w-6 inline items-center"
-            />
+            <img src="/img/perfil.png" class="w-6 inline items-center" />
             Login
           </button>
         </div>
@@ -100,10 +97,10 @@
         class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0"
       >
         <a
-          href="landingPage.html"
+          href="/"
           class="flex items-center text-2xl font-semibold text-gray-900 dark:text-[#0D3B66]"
         >
-          <img src="../public/img/via_da_saudade.png" class="w-40" />
+          <img src="/img/via_da_saudade.png" class="w-40" />
         </a>
         <div
           class="w-full bg-white rounded-md border border-blue-700 mb-8 md:mt-0 sm:max-w-md xl:p-0"
@@ -114,7 +111,11 @@
             >
               Entre sua Conta
             </h1>
-            <form class="space-y-4 md:space-y-6" action="#">
+            <form
+              class="space-y-4 md:space-y-6"
+              action="/cadastro"
+              method="post"
+            >
               <div>
                 <label
                   for="email"
@@ -154,7 +155,7 @@
               <p class="text-sm font-light text-gray-500 dark:text-gray-700">
                 Não tem uma conta ainda?
                 <a
-                  href="Cadastro.html"
+                  href="localhost:3000/cadastro"
                   class="font-medium text-primary-600 hover:underline dark:text-primary-500"
                   >Cadastre-se</a
                 >
@@ -164,13 +165,14 @@
         </div>
       </div>
     </section>
+    <!-- Rodapé da página -->
     <footer class="bg-white dark:bg-gray-50 border">
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
-            <a href="landingPage.html" class="items-center">
+            <a href="/" class="items-center">
               <img
-                src="../public/img/logopt2_techway.png"
+                src="/img/logopt2_techway.png"
                 class="h-8 me-3"
                 alt="TechWay Logo"
               />
@@ -189,10 +191,10 @@
               </h2>
               <ul class="text-gray-500 dark:text-orange-700 font-medium">
                 <li class="mb-4">
-                  <a href="Login.html" class="hover:underline">Login</a>
+                  <a href="/login" class="hover:underline">Login</a>
                 </li>
                 <li>
-                  <a href="Cadastro.html" class="hover:underline">Cadastro</a>
+                  <a href="/cadastro" class="hover:underline">Cadastro</a>
                 </li>
               </ul>
             </div>
@@ -204,12 +206,10 @@
               </h2>
               <ul class="text-gray-500 dark:text-orange-700 font-medium">
                 <li class="mb-4">
-                  <a href="MemorialPost.html" class="hover:underline"
-                    >Memoriais</a
-                  >
+                  <a href="/memorial" class="hover:underline">Memoriais</a>
                 </li>
                 <li>
-                  <a href="#" class="hover:underline">Quem somos</a>
+                  <a href="/quemsomos" class="hover:underline">Quem somos</a>
                 </li>
               </ul>
             </div>
@@ -221,10 +221,10 @@
               </h2>
               <ul class="text-gray-500 dark:text-orange-700 font-medium">
                 <li class="mb-4">
-                  <a href="ONGS.html" class="hover:underline">ONGs</a>
+                  <a href="/ongs" class="hover:underline">ONGs</a>
                 </li>
                 <li>
-                  <a href="Campanhas.html" class="hover:underline">Campanhas</a>
+                  <a href="/campanhas" class="hover:underline">Campanhas</a>
                 </li>
               </ul>
             </div>
@@ -233,12 +233,12 @@
         <hr class="my-6 border-blue-900 sm:mx-auto dark:border-blue-900" />
         <div class="sm:flex sm:items-center sm:justify-between">
           <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-            >© 2024
-            <a href="landingPage.html" class="hover:underline">TechWay™</a>. All
-            Rights Reserved.
+            >© 2024 <a href="/" class="hover:underline">TechWay™</a>. All Rights
+            Reserved.
           </span>
         </div>
       </div>
     </footer>
+    <script src="/script/navigation.js"></script>
   </body>
 </html>
