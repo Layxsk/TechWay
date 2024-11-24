@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "nome": "teste",
+    "sobrenome": "teste",
+    "localAcidente": "teste",
+    "dataFalecimento": "YYYY-MM-dd",
+    "mensagem": "texto"
+  },
+  {
+    "id": 2,
+    "nome": "teste",
+    "sobrenome": "teste",
+    "localAcidente": "teste",
+    "dataFalecimento": "YYYY-MM-dd",
+    "mensagem": "texto"
+  }
+]
