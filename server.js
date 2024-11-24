@@ -18,7 +18,13 @@ app.use(userRoute);
 app.get("/", (req, res, next) => {
   res.sendFile(path.join(__dirname, "src", "views", "landingPage.html"));
 });
+
+app.get("/memories", (req, res) => {
+  res.sendFile(path.join(__dirname, "src", "utils", "memories.json"));
+});
+
 app.use((req, res, next) => {
   res.status(404).send("Address not found");
 });
+
 app.listen(3000);

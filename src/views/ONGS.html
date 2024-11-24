@@ -257,5 +257,11 @@
       </div>
     </footer>
     <script src="/script/navigation.js"></script>
+    <script type="module" src="/script/search.js"></script>
+    <script type="module" src="/script/memories.js"></script>
+    <script type="module">
+      import { initializePageBehavior } from "./script/search.js";
+      initializePageBehavior();
+    </script>
   </body>
 </html>

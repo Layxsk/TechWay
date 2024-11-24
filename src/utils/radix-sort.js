@@ -27,6 +27,11 @@ export default class RadixSort {
     const bigger = this.getBiggerNumber(array);
     const length = this.getMaxLength(bigger);
     this.generateBucketList();
+    const sortedArray = this.radix(length, array);
+    return sortedArray;
+  }
+
+  radix(length, array) {
     for (let size = 0; size < length; size++) {
       let unit = Math.pow(10, size);
       array.forEach((element) => {
@@ -45,9 +50,9 @@ export default class RadixSort {
   }
 }
 
-const sorter = new RadixSort();
+/* const sorter = new RadixSort();
 
 // Seção para testar o que tá rolando
-/*const array = [170, 45, 75, 90, 802, 24, 2, 66];
+const array = [0, 0, 0, 1, 10, 100];
 console.log("Array antes de fazer a ordenação:", array);
-console.log("Array após a ordenação:", sorter.radixSorting(array));*/
+console.log("Array após a ordenação:", sorter.radixSorting(array)); */
