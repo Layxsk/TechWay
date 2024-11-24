@@ -16,13 +16,9 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
-    <link
-      rel="shortcut icon"
-      href="../public/img/iconvs.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="../public/css/landingPage.css" />
-    <link rel="stylesheet" href="../public/css/output.css" />
+    <link rel="shortcut icon" href="/img/iconvs.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/landingPage.css" />
+    <link rel="stylesheet" href="/css/output.css" />
   </head>
   <body class="max-w-7xlmx-auto" class="bg-gray-500">
     <!-- Navbar -->
@@ -30,31 +26,35 @@
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <div class="flex items-center space-x-5 px-5">
-          <img src="../public/img/logo.png" alt="Logo" class="w-28" />
+          <img src="/img/logo.png" alt="Logo" class="w-28" />
         </div>
         <!-- Links de Navegação (Centralizados) -->
         <div class="flex-1 flex text-center space-x-6">
           <!-- Botão "Página Inicial" -->
           <button
+            id="btn-landingPage"
             class="text-blue-900 hover:text-orange-500 bg-transparent focus:outline-none"
           >
             Página Inicial
           </button>
           <!-- Botão "ONGs" -->
           <button
+            id="btn-ong"
             class="text-blue-900 hover:text-orange-500 bg-transparent focus:outline-none"
           >
             ONGs
           </button>
           <!-- Botão "Sobre" -->
           <button
+            id="btn-sobre"
             class="text-blue-900 hover:text-orange-500 bg-transparent focus:outline-none"
           >
             Sobre
           </button>
           <!-- Botão "Campanha Memória" -->
           <button
-            class=" text-blue-900 border border-orange-500 px-10 py-2 rounded-full focus:ring-orange-500 hover:text-orange-500"
+            id="btn-campanhas"
+            class="text-blue-900 border border-orange-500 px-10 py-2 rounded-full focus:ring-orange-500 hover:text-orange-500"
           >
             Campanha Memória
           </button>
@@ -62,6 +62,7 @@
         <!-- Barra de Pesquisa -->
         <div class="relative">
           <input
+            id="search-bar"
             type="text"
             placeholder="Procurar memorial"
             class="py-2 px-4 pl-10 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 w-64"
@@ -81,13 +82,10 @@
           </svg>
           <!--botao de login-->
           <button
-            url="Login.html"
+            id="btn-login"
             class="text-blue-900 border border-orange-500 px-4 py-2 rounded-full focus:ring-orange-500 hover:text-orange-500 ml-4"
           >
-            <img
-              src="../public/img/perfil.png"
-              class="w-6 inline items-center"
-            />
+            <img src="/img/perfil.png" class="w-6 inline items-center" />
             Login
           </button>
         </div>
@@ -113,7 +111,7 @@
               data-carousel-item="active"
             >
               <img
-                src="../public/img/Captura de tela_5-11-2024_19402_www.cnnbrasil.com.br.jpeg"
+                src="/img/Captura de tela_5-11-2024_19402_www.cnnbrasil.com.br.jpeg"
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="1"
               />
@@ -121,7 +119,7 @@
             <!-- Item 2 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <img
-                src="../public/img/emergency-auto-mechanic-repairing-woman-vehicle-street.jpg"
+                src="/img/emergency-auto-mechanic-repairing-woman-vehicle-street.jpg"
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="2"
               />
@@ -129,7 +127,7 @@
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <img
-                src="../public/img/group-young-friends-stacking-hands.jpg"
+                src="/img/group-young-friends-stacking-hands.jpg"
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="3"
               />
@@ -137,7 +135,7 @@
             <!-- Item 4 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <img
-                src="../public/img/woman-crashed-into-car-girl-helmet.jpg"
+                src="/img/woman-crashed-into-car-girl-helmet.jpg"
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="4"
               />
@@ -292,6 +290,7 @@
         <!-- Botão para iniciar -->
         <div class="text-center w-full">
           <button
+            id="btn-cadastro"
             class="bg-orange-500 text-white py-2 px-10 text-lg hover:bg-blue-500 transition duration-200 rounded-full"
           >
             Começar
@@ -319,8 +318,10 @@
 
     <div class="flex p-8">
       <div class="p-1 items-right justify-center">
-        <div class="rounded shadow-lg justify-center items-center flex-col flex">
-          <img class="w-96" src="../public/img/maosdads.jpg" />
+        <div
+          class="rounded shadow-lg justify-center items-center flex-col flex"
+        >
+          <img class="w-96" src="/img/maosdads.jpg" />
           <div class="px-6 py-4 items-center flex flex-wrap justify-center">
             <div class="font-bold text-xl mb-2 text-blue-900">
               Conheça as ONGs!
@@ -331,6 +332,7 @@
               comunidades vulneráveis e atuar onde o governo nem sempre chega.
             </p>
             <button
+              id="btn-ong2"
               class="bg-white text-blue-900 border border-orange-500 w-1/2 text-lg hover:border-blue-900 hover:text-orange-500 rounded-full"
             >
               Ver Mais
@@ -339,8 +341,10 @@
         </div>
       </div>
       <div class="p-1 items-center justify-center">
-        <div class="rounded shadow-lg justify-center items-center flex-col flex">
-          <img class="w-96" src="../public/img/Datas.jpg" />
+        <div
+          class="rounded shadow-lg justify-center items-center flex-col flex"
+        >
+          <img class="w-96" src="/img/Datas.jpg" />
           <div class="px-6 py-4 flex flex-wrap justify-center">
             <div class="font-bold text-xl mb-2 text-blue-900">
               Conheça as Campanhas!
@@ -350,7 +354,10 @@
               As campanhas em datas dedicadas ao trânsito são essenciais para
               conscientizar a sociedade e reforçar práticas seguras.
             </p>
-            <button class="bg-white text-blue-900 border border-orange-500 w-1/2 text-lg hover:text-orange-500 rounded-full">
+            <button
+              id="btn-campanhas2"
+              class="bg-white text-blue-900 border border-orange-500 w-1/2 text-lg hover:text-orange-500 rounded-full"
+            >
               Ver Mais
             </button>
           </div>
@@ -364,9 +371,9 @@
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
-            <a href="landingPage.html" class="items-center">
+            <a href="/" class="items-center">
               <img
-                src="../public/img/logopt2_techway.png"
+                src="/img/logopt2_techway.png"
                 class="h-8 me-3"
                 alt="TechWay Logo"
               />
@@ -385,10 +392,10 @@
               </h2>
               <ul class="text-gray-500 dark:text-orange-700 font-medium">
                 <li class="mb-4">
-                  <a href="Login.html" class="hover:underline">Login</a>
+                  <a href="/login" class="hover:underline">Login</a>
                 </li>
                 <li>
-                  <a href="Cadastro.html" class="hover:underline">Cadastro</a>
+                  <a href="/cadastro" class="hover:underline">Cadastro</a>
                 </li>
               </ul>
             </div>
@@ -400,14 +407,10 @@
               </h2>
               <ul class="text-gray-500 dark:text-orange-700 font-medium">
                 <li class="mb-4">
-                  <a href="MemorialPost.html" class="hover:underline"
-                    >Memoriais</a
-                  >
+                  <a href="/memorial" class="hover:underline">Memoriais</a>
                 </li>
                 <li>
-                  <a href="QuemSomos.html" class="hover:underline"
-                    >Quem somos</a
-                  >
+                  <a href="/quemsomos" class="hover:underline">Quem somos</a>
                 </li>
               </ul>
             </div>
@@ -419,10 +422,10 @@
               </h2>
               <ul class="text-gray-500 dark:text-orange-700 font-medium">
                 <li class="mb-4">
-                  <a href="ONGS.html" class="hover:underline">ONGs</a>
+                  <a href="/ongs" class="hover:underline">ONGs</a>
                 </li>
                 <li>
-                  <a href="Campanhas.html" class="hover:underline">Campanhas</a>
+                  <a href="/campanhas" class="hover:underline">Campanhas</a>
                 </li>
               </ul>
             </div>
@@ -431,12 +434,18 @@
         <hr class="my-6 border-blue-900 sm:mx-auto dark:border-blue-900" />
         <div class="sm:flex sm:items-center sm:justify-between">
           <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-            >© 2024
-            <a href="landingPage.html" class="hover:underline">TechWay™</a>. All
-            Rights Reserved.
+            >© 2024 <a href="/" class="hover:underline">TechWay™</a>. All Rights
+            Reserved.
           </span>
         </div>
       </div>
     </footer>
+    <script src="/script/navigation.js"></script>
+    <script type="module" src="/script/search.js"></script>
+    <script type="module" src="/script/memories.js"></script>
+    <script type="module">
+      import { initializePageBehavior } from "./script/search.js";
+      initializePageBehavior();
+    </script>
   </body>
 </html>
