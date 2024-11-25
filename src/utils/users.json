@@ -1,20 +1,38 @@
 [
   {
     "id": 1,
-    "firstName": "lay",
-    "lastName": "oliveira",
-    "email": "azyoli19@gmail.com",
-    "password": "$2b$10$5iXDExLxQPwK7pR0PuamoeGofcV2GzksH8CE3DbG4KORjmWsQmKAi",
-    "city": "Ribeirópolis",
-    "state": "Sergipe"
+    "firstName": "Vanessa",
+    "lastName": "Marques da Silva",
+    "email": "VanessaM10@gmail.com",
+    "password": "$2b$10$wrqNCMeZYA/3x2hbGeRFm.7TLLdcbvsyR7E/L/DHZbHhzGuT1s.ya",
+    "city": "Pinheiros ",
+    "state": "São Paulo"
   },
   {
     "id": 2,
-    "firstName": "Lay",
-    "lastName": "oliveira",
-    "email": "azyoli19@gmal.com",
-    "password": "$2b$10$gQg55zMFzCrsgpoixsJRB.LOUN8TO1dxUvD4dULT4ifNjYWhnj9NK",
-    "city": "Ribeirópolis",
-    "state": "Sergipe"
+    "firstName": "Bett",
+    "lastName": "Lopes",
+    "email": "Bettlopes27@hotmail.com",
+    "password": "$2b$10$d9qonh/VrIjaKVGg5dBXRe5zrYU4XQNCf83ZWQgMWyWi4VSZ.OtGS",
+    "city": "Palmas",
+    "state": "Tocantins"
+  },
+  {
+    "id": 3,
+    "firstName": "Marines",
+    "lastName": "Girotto",
+    "email": "Mariotto1975@outlook.com",
+    "password": "$2b$10$u5sI7ds.wtwfGeLipM5PSur1d3SviBseuC0ynosG7rqe4y42QGpJm",
+    "city": "Fagundes Varela",
+    "state": "Rio Grande do Sul"
+  },
+  {
+    "id": 4,
+    "firstName": "Carla",
+    "lastName": "Menin",
+    "email": "CarlaMe87@hotmail.com",
+    "password": "$2b$10$KsYFTDJTrnq9pp9xI7ewqekjnLox9phfq3fCTH46qwK2OqTmM9RYa",
+    "city": "Veranópolis",
+    "state": "Rio Grande do Sul"
   }
 ]
