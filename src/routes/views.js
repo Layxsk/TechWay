@@ -19,6 +19,10 @@ router.get("/memorial", (req, res, next) => {
   res.sendFile(path.join(srcDir, "views", "MemorialPost.html"));
 });
 
+router.get("/memorial-cadastro", (req, res, next) => {
+  res.sendFile(path.join(srcDir, "views", "MemorialCadastro.html"));
+});
+
 router.get("/quemsomos", (req, res, next) => {
   res.sendFile(path.join(srcDir, "views", "QuemSomos.html"));
 });
