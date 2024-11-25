@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "id": 1,
+    "firstName": "lay",
+    "lastName": "oliveira",
+    "email": "azyoli19@gmail.com",
+    "password": "$2b$10$5iXDExLxQPwK7pR0PuamoeGofcV2GzksH8CE3DbG4KORjmWsQmKAi",
+    "city": "Ribeirópolis",
+    "state": "Sergipe"
+  },
+  {
+    "id": 2,
+    "firstName": "Lay",
+    "lastName": "oliveira",
+    "email": "azyoli19@gmal.com",
+    "password": "$2b$10$gQg55zMFzCrsgpoixsJRB.LOUN8TO1dxUvD4dULT4ifNjYWhnj9NK",
+    "city": "Ribeirópolis",
+    "state": "Sergipe"
+  }
+]
