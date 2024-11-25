@@ -1,6 +1,21 @@
 export default class RadixSort {
   #bucketList;
   #radixStack;
+  #isValid = false;
+
+  validator(array) {
+    array.forEach((element) => {
+      if (typeof element === "string") {
+        console.log("O algoritmo não ordena letras, apenas números naturais.");
+        return;
+      } else if (element < 0 || element % 1 != 0) {
+        console.log("O algoritmo só aceita números naturais.");
+        return;
+      } else {
+        this.#isValid = true;
+      }
+    });
+  }
   getBiggerNumber(array) {
     const length = array.length;
     let max = array[0];
@@ -24,6 +39,10 @@ export default class RadixSort {
   }
 
   radixSorting(array) {
+    if (!this.validator(array)) {
+      return ["Ajuste o vetor de entrada"];
+    }
+
     const bigger = this.getBiggerNumber(array);
     const length = this.getMaxLength(bigger);
     this.generateBucketList();
@@ -50,9 +69,9 @@ export default class RadixSort {
   }
 }
 
-/* const sorter = new RadixSort();
+/*const sorter = new RadixSort();
 
 // Seção para testar o que tá rolando
-const array = [0, 0, 0, 1, 10, 100];
+const array = [0, 0, 10.1, "a", 100];
 console.log("Array antes de fazer a ordenação:", array);
-console.log("Array após a ordenação:", sorter.radixSorting(array)); */
+console.log("Array após a ordenação:", sorter.radixSorting(array));*/
