@@ -9,6 +9,7 @@ function navigation() {
     { id: "btn-campanhas", href: "/campanhas" },
     { id: "btn-campanhas2", href: "/campanhas" },
     { id: "btn-cadastro", href: "/cadastro" },
+    { id: "btn-submit-history", href: "/memorial-cadastro" },
   ];
 
   routes.forEach(({ id, href }) => {
