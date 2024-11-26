@@ -33,12 +33,14 @@ export async function filterAndRenderStories(searchParam) {
 
 export async function initializeSearchBar() {
   const bar = document.getElementById("search-bar");
+  let pause;
+  bar.addEventListener("input", (event) => {
+    const userSearch = bar.value.trim().toLowerCase();
+    if (pause) {
+      clearTimeout(pause);
+    }
 
-  bar.addEventListener("keyup", (event) => {
-    if (event.key === "Enter") {
-      const userSearch = bar.value.trim().toLowerCase();
-      console.log(userSearch);
-
+    pause = setTimeout(() => {
       if (userSearch) {
         window.location.href = `/memorial?search=${encodeURIComponent(
           userSearch
@@ -46,7 +48,7 @@ export async function initializeSearchBar() {
       } else {
         alert("Digite algo para buscar!");
       }
-    }
+    }, 500);
   });
 }
 
